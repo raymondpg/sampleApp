@@ -1,0 +1,25 @@
+#ccButton {
+    height: 50px;
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-width: 2;
+}
+
+#schedItemContainer {
+    height: 100px;
+    width: 200px;
+}
+
+#label {
+    text-align: center
+}
+
+#scheduleButton {
+    height: 30px;
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-width: 2;
+    margin-left: 50px
+}

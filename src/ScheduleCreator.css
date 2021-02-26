@@ -1,0 +1,75 @@
+#fullGrid{
+    margin-left: 2%;
+    display: inline;
+    float: left;
+    margin-left: 0
+}
+
+#sideText{
+    display: inline;
+    float: left
+}
+
+#hourText{
+    height: 51px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 51px;
+    width: 100px;
+}
+
+#topText{
+    margin-left: 100px;
+    float: auto;
+}
+
+#dayText {
+    display: inline-block;
+    height: 50px;
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+#gridRow {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#centralContent {
+    overflow: auto
+}
+
+#botText {
+    width: 600px;
+    height: 60px
+}
+
+#updateButton {
+    width: 100px;
+    height: 30px;
+    margin-left: 50%;
+    margin-top: 5%;
+    background-color:dodgerblue
+}
+
+#returnButton {
+    width: 150px;
+    height: 30px;
+    margin-left: 45.5%;
+    margin-top: 5%;
+    background-color:dodgerblue
+}
+
+#gridBlock {
+    float: left
+}
+
+#schedList {
+    float: left;
+}

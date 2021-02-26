@@ -1,4 +1,7 @@
 import React, {Component} from "react";
+import {
+    Link
+  } from "react-router-dom";
 import TextHandler from "./Components/TextHandler"
 import ObscuredTextHandler from "./Components/ObscuredTextHandler"
 
@@ -37,16 +40,6 @@ class Login extends Component {
         });
     };
 
-    loginClick = () => {
-        if(this.state.username === "Username" && this.state.password === "Password"){
-            console.log("Correct!");
-        } else if (this.state.username === "Username") {
-            alert("Invalid Password!");
-        } else {
-            alert("Invalid Username!");
-        }
-    };
-
     render() {
         return(
             <div>
@@ -80,13 +73,17 @@ class Login extends Component {
                     <TextHandler
                         valueUser={this.state.username}
                         onChangeUser={this.onChangeUser}
-                        name={"Username"}
+                        name={"New User"}
                     />
-                    <ObscuredTextHandler
-                        valuePass={this.state.obscuredPass}
-                        onChangePass={this.onChangePass}
-                        name={"Password"}
-                    />
+                    <label style = {{display: "block", textAlign: "center", margin: "auto", color: "white", marginTop: "5px"}}>
+                        Already Entered
+                    <select style = {{display: "block", textAlign: "center", margin: "auto", marginTop: "5px"}}>
+                        <option>
+                            Name One
+                        </option>
+                    </select>
+                    </label>
+                    <Link to = {"/userInteract"}>
                     <button
                         style = {{
                             display: "inline",
@@ -99,10 +96,10 @@ class Login extends Component {
                             backgroundColor: "#808080",
                             border: "none",
                             color: "white"}}
-                        onClick = {this.loginClick}
                     >
-                        Login
+                        Change Schedule
                     </button>
+                    </Link>
                 </div>
             </div>
         );
