@@ -9,6 +9,7 @@ import logo from './logo.svg';
 import './App.css';
 import Login from "./Login.js"
 import ScheduleCreator from "./ScheduleCreator"
+import Schedule from "./Schedule"
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path = "/userInteract">
           <ScheduleCreator/>
+        </Route>
+        <Route path = "/schedules">
+          <Schedule/>
         </Route>
       </Switch>
     </Router>

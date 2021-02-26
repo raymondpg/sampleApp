@@ -1,0 +1,31 @@
+#colorBlock {
+    height: 40px;
+    width: 90px;
+    border: solid black 2px;
+    display: inline-block;
+    vertical-align:top;
+    text-align: center;
+}
+#blankBlock {
+    height: 40px;
+    width: 94px;
+    display: inline-block;
+    vertical-align:top;
+    text-align: center;
+}
+#gridContainer { 
+    width: 564px;
+    margin: 0 auto;
+    margin-top: 3%;
+ }
+#selection {
+    margin-left: 50%;
+    height: 30px;
+}
+
+#scheduleLabel {
+    margin-left: 50%;
+    width: 90px;
+    text-align: center;
+    margin-bottom: 0px;
+}

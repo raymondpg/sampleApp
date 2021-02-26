@@ -53,51 +53,86 @@ class Login extends Component {
                 />
                 <p style = {{
                     position: "absolute",
-                    top: "25%", left: "50%",
+                    top: "15%", left: "50%",
                     transform: "translate(-50%,-50%)",
                     fontSize: "30px",
                     textAlign: "center",
                     color: "#ffffff",
                     width: "30%"
                 }}
-                >Log In!</p>
+                >When2Meet+</p>
                 <div style = {{
                     display: "block",
                     position: "absolute",
                     top: "50%", left: "50%",
                     transform: "translate(-50%,-50%)",
                     backgroundColor: "#505050",
-                    width: "290px",
-                    height: "220px",
+                    width: "30%",
+                    height: "40%",
                     borderRadius: "15px"}}>
                     <TextHandler
                         valueUser={this.state.username}
                         onChangeUser={this.onChangeUser}
                         name={"New User"}
                     />
-                    <label style = {{display: "block", textAlign: "center", margin: "auto", color: "white", marginTop: "5px"}}>
+                    <Link to = {"/userInteract"}>
+                        <button
+                            style = {{
+                                marginLeft: "50%",
+                                marginTop: "20px",
+                                marginBottom: "15px",
+                                width: "40%",
+                                height: "20px",
+                                transform: "translate(-50%,0)",
+                                backgroundColor: "#808080",
+                                border: "none",
+                                color: "white"}}
+                        >
+                            Create Profile
+                        </button>
+                    </Link>
+                    <label style = {{display: "block", textAlign: "center", margin: "auto", color: "white", marginTop: "15px"}}>
                         Already Entered
-                    <select style = {{display: "block", textAlign: "center", margin: "auto", marginTop: "5px"}}>
-                        <option>
+                    <select style = {{display: "block", textAlign: "center", 
+                    margin: "auto", marginTop: "5px", wdith: "50%"}}>
+                        <option style = {{textAlign: "center"}}>
                             Name One
+                        </option>
+                        <option>
+                            Someone's name
                         </option>
                     </select>
                     </label>
                     <Link to = {"/userInteract"}>
                     <button
                         style = {{
-                            display: "inline",
                             marginLeft: "50%",
                             marginTop: "20px",
                             marginBottom: "15px",
-                            width: "50%",
-                            height: "30px",
+                            width: "40%",
+                            height: "20px",
                             transform: "translate(-50%,0)",
                             backgroundColor: "#808080",
                             border: "none",
                             color: "white"}}
                     >
-                        Change Schedule
+                        Change Availability
+                    </button>
+                    </Link>
+                    <Link to = {"/schedules"}>
+                    <button
+                        style = {{
+                            marginLeft: "50%",
+                            marginTop: "20px",
+                            marginBottom: "15px",
+                            width: "60%",
+                            height: "30px",
+                            transform: "translate(-50%,0)",
+                            backgroundColor: "black",
+                            border: "none",
+                            color: "white"}}
+                    >
+                        View Schedules
                     </button>
                     </Link>
                 </div>
