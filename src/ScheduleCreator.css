@@ -11,17 +11,17 @@
 }
 
 #hourText{
-    height: 51px;
+    height: 41px;
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
     vertical-align: middle;
     line-height: 51px;
-    width: 100px;
+    width: 200px;
 }
 
 #topText{
-    margin-left: 100px;
+    margin-left: 200px;
     float: auto;
 }
 
@@ -46,7 +46,7 @@
 }
 
 #botText {
-    width: 600px;
+    width: 800px;
     height: 60px
 }
 
@@ -55,13 +55,15 @@
     height: 30px;
     margin-left: 50%;
     margin-top: 5%;
+    transform: translate(-50%);
     background-color:dodgerblue
 }
 
 #returnButton {
     width: 150px;
     height: 30px;
-    margin-left: 45.5%;
+    margin-left: 50%;
+    transform: translate(-50%);
     margin-top: 5%;
     background-color:dodgerblue
 }

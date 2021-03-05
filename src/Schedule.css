@@ -8,13 +8,20 @@
 }
 #blankBlock {
     height: 40px;
+    width: 194px;
+    display: inline-block;
+    vertical-align:top;
+    text-align: center;
+}
+#topBlock {
+    height: 40px;
     width: 94px;
     display: inline-block;
     vertical-align:top;
     text-align: center;
 }
 #gridContainer { 
-    width: 564px;
+    width: 664px;
     margin: 0 auto;
     margin-top: 3%;
  }

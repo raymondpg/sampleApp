@@ -4,8 +4,8 @@ import "./Schedule.css"
 class Schedule extends Component {
 
     days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-    hours = ["11am-12pm", "12pm-1pm", "1pm-2pm", "2pm-3pm", "3pm-4pm", 
-    "4pm-5pm", "5pm-6pm", "6pm-7pm", "7pm-8pm", "8pm-9pm"]
+    hours = ["11:00am-11:30am", "11:30am-12:00pm",  "12:00pm-12:30pm", "12:30pm-1:00pm","1:00pm-1:30pm", "1:30pm-2:00pm", "2:00pm-2:30pm", "2:30pm-3:00pm", "3:00pm-3:30pm", 
+    "3:30pm-4:00pm","4:00pm-4:30pm","4:30pm-5:00pm", "5:00pm-5:30pm","5:30pm-6:00pm", "6:00pm-6:30pm", "6:30pm-7:00pm", "7:00pm-7:30pm","7:30pm-8:00pm"]
     schedules = ["Mechanical", "Electrical"]
 
     constructor(props) {
@@ -33,7 +33,7 @@ class Schedule extends Component {
     <div>
         <div id = "blankBlock" style={{backgroundColor: "white"}}>  </div>
         {this.days.map((day,index) => {
-            return<div id = "blankBlock" style={{backgroundColor: "white"}}>{day}</div>
+            return<div id = "topBlock" style={{backgroundColor: "white"}}>{day}</div>
         })}
     </div>
     )
